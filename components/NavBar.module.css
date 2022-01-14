@@ -1,0 +1,14 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.link {
+    color: blueviolet;
+}
+
+.active {
+    color: tomato;
+}
