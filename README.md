@@ -6,4 +6,4 @@
 >
 > 아이디어: 회사 앞 xx식당은 매주 식단을 메일로 보내주곤 하는데, 이를 간편하게 보여줄 수 있는 페이지 작성.
 >
-> Frontend : Next.js, Backend: Spring boot / Mybatis 
+> Frontend : Next.js / ant design, Backend: Spring boot / Mybatis 
