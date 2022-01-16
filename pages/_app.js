@@ -15,7 +15,7 @@ const App = ({Component, pageProps}) => {
                 <Content>
                     <Component {...pageProps} />
                 </Content>
-                <Footer>Footer</Footer>
+                {/* <Footer>Footer</Footer> */}
             </DLayout>
         </>
         
