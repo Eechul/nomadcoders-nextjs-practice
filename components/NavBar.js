@@ -8,8 +8,10 @@ export default function NavBar() {
     return (
         <Header>
             <Menu mode="horizontal">
-                <Menu.Item key="home">홈</Menu.Item>
-                <Menu.Item key="about">식단</Menu.Item>
+                <Menu.Item key="home">
+                    <Link href={"/"}>홈</Link>
+                </Menu.Item>
+                <Link href={"/menu"}>식단</Link>
             </Menu>
         </Header>
     )

@@ -6,7 +6,7 @@ export default function Home() {
         <>
             <DCarousel />
             <h3>최신 식단 [1월 2째주]</h3>
-            <Row gutter={16}>
+            <Row gutter={8}>
                 <Col span={4}>
                     <Card>
                         <p>월</p>
@@ -55,6 +55,11 @@ export default function Home() {
                         <p>김치</p>
                         <p>무피클</p>
                         <p>미역국</p>
+                    </Card>
+                </Col>
+                <Col span={4}>
+                    <Card>
+                        <p>식단 보기 -></p>
                     </Card>
                 </Col>
             </Row>

@@ -6,12 +6,12 @@ import NavBar from "./NavBar"
 export default function DLayout({ children }) {
 
     return (
-        <Layout >
+        <Layout style={{height: '100vh'}}>
             <Head>
                 <title>title</title>
             </Head>
-            <Row justify="center">
-                <Col span={12}>
+            <Row gutter={[16, 16]}>
+                <Col span={24}>
                     <NavBar />
                     <div>{children}</div>
                 </Col>
