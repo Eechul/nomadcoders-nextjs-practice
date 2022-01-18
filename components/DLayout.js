@@ -6,7 +6,7 @@ import NavBar from "./NavBar"
 export default function DLayout({ children }) {
 
     return (
-        <Layout style={{height: '100vh'}}>
+        <Layout>
             <Head>
                 <title>title</title>
             </Head>
@@ -17,5 +17,6 @@ export default function DLayout({ children }) {
                 </Col>
             </Row>
         </Layout>
+        
     );
 }
