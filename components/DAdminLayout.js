@@ -8,7 +8,7 @@ export default function DLayout({ children }) {
     return (
         <Layout>
             <Head>
-                <title>title</title>
+                <title>title 어드민</title>
             </Head>
             <Row>
                 <Col span={24}>

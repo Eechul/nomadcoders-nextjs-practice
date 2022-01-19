@@ -5,17 +5,26 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { Content, Footer } from "antd/lib/layout/layout";
 import { useRouter } from "next/router";
 import DLayout from "../components/DLayout";
+import DAdminLayout from "../components/DAdminLayout";
 import 'antd/dist/antd.css';
 
 const App = ({Component, pageProps}) => {
     const router = useRouter();
-    return (
+    console.log(router);
+    return router.pathname.startsWith('/admin') ?  (
+        <>
+            <DAdminLayout>
+                <Content>
+                    <Component {...pageProps} />
+                </Content>
+            </DAdminLayout>
+        </>
+    ) : (
         <>
             <DLayout>
                 <Content>
                     <Component {...pageProps} />
                 </Content>
-                {/* <Footer>Footer</Footer> */}
             </DLayout>
         </>
         
