@@ -5,7 +5,7 @@ import { CaretRightOutlined } from '@ant-design/icons';
 import DLoadMore from '../../components/DLoadMore';
 import DMenu from '../../components/DMenu';
 const { Panel } = Collapse;
-export default function test({ testcase }) {
+export default function Menu({ testcase }) {
     const [data, setData] = useState([]);
     const [list, setList] = useState([]);
     const [initLoading, setInitLoading] = useState(true);

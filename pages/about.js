@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { countPlusAction, countMinusAction } from '../reducers/count';
 import { Button } from 'antd';
 
-export default function test() {
+export default function About() {
     const dispath = useDispatch();
     const count = useSelector(state => state.count);
 
