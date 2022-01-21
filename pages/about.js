@@ -18,7 +18,6 @@ export default function About() {
             <h1>About {count}</h1>
             <Button type='primary' size={12} onClick={onClickPlus}>+</Button>
             <Button type='primary' size={12} onClick={onClickMinus}>-</Button>
-
         </div>
     );
 }
