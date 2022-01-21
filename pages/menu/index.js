@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Collapse, Skeleton } from 'antd';
 import { CaretRightOutlined } from '@ant-design/icons';
 import DLoadMore from '../../components/DLoadMore';
+import DMenu from '../../components/DMenu';
 const { Panel } = Collapse;
 export default function test({ testcase }) {
     const [data, setData] = useState([]);
@@ -35,17 +36,18 @@ export default function test({ testcase }) {
     return (
         <>
             <Collapse
+                accordion
                 bordered={false}
                 expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
                 className="site-collapse-custom-collapse"
             >
                 {testcase?.map((item) => (
                     <Panel header={item.title} key={item.no} className="site-collapse-custom-panel">
-                        <p>{'text'}</p>
+                        <DMenu />
                     </Panel>
                 ))}
             </Collapse>
-            <loadMore/>
+            {loadMore}
         </>
     );
 }

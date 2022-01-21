@@ -3,7 +3,7 @@ import { Button } from 'antd';
 export default function DLoadMore({ children, loadFn, inStyle }) {
     inStyle = inStyle == null ? {
         textAlign: 'center',
-        marginTop: 12,
+        paddingTop: 12,
         height: 32,
         lineHeight: '32px',
         backgroundColor: '#ffffff',
