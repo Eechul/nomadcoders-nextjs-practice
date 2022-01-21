@@ -5,6 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:dist": "next start -p 20110",
     "lint": "next lint"
   },
   "dependencies": {
