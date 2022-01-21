@@ -13,7 +13,12 @@ export default function Home() {
     }
 
     useEffect(() => {
-        showMd()
+        if(localStorage.getItem('first-intro-md-show') != 'Y') {
+            showMd()
+            localStorage.setItem('first-intro-md-show', 'Y')
+        }
+        
+        
     }, [])
     return (
         <>
